@@ -1,0 +1,10 @@
+
+states: q0 q1 q2
+alphabet: QUOTE ASCII_EXCEPT_QUOTE_NEWLINE
+initial_state: q0
+final_states: q2
+
+transitions:
+q0 QUOTE q1
+q1 ASCII_EXCEPT_QUOTE_NEWLINE q1
+q1 QUOTE q2
